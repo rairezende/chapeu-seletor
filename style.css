@@ -1,0 +1,360 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: rgb(3, 3, 41);
+  color: white;
+}
+
+/* header {
+  background-color: rgba(12, 12, 12, 0.616);
+  border-radius: 50;
+}
+header h1 {
+  text-align: center;
+  margin: 40px;
+} */
+
+section {
+  text-align: center;
+  align-items: center;
+}
+
+#hall {
+  background-image: url("hall.webp");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hat {
+  margin-top: 65px;
+}
+
+#btn1 {
+  padding: 20px;
+  width: 190px;
+  margin-right: 3%;
+  background-color: rgba(8, 4, 0, 0.925);
+  color: white;
+  font-size: 19px;
+  font-family: "Lato", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: rgba(22, 10, 2, 0.658);
+}
+
+#btn1:hover {
+  transform: scale(1.03);
+  background: rgba(189, 187, 187, 0.856);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#form1,
+#form2,
+#form3,
+#form4,
+#form5,
+#form6,
+#form7,
+#form8,
+#form9 {
+  display: none;
+}
+
+#sly-or-gryff {
+  display: none;
+}
+
+#sly-or-huff {
+  display: none;
+}
+
+#sly-or-raven {
+  display: none;
+}
+
+#gryff-or-huff {
+  display: none;
+}
+
+#gryff-or-raven {
+  display: none;
+}
+
+#huff-or-raven {
+  display: none;
+}
+
+/* Coloca a div dos botões next no estilo flex */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  margin-top: 40px;
+  margin-right: 23%;
+  margin-bottom: 50px;
+  padding-top: 2px;
+  padding-bottom: 13px;
+  text-align: center;
+  background-color: rgba(5, 0, 0, 0.767);
+  width: 60%;
+  border-radius: 30px;
+  margin-left: 23%;
+  border-width: 1.5px;
+}
+
+legend {
+  margin: 10px;
+  font-weight: bold;
+}
+
+#next1,
+#next2,
+#next3,
+#next4,
+#next5,
+#next6,
+#next7,
+#next8,
+#next9,
+#next10,
+#next11,
+#next12,
+#next13,
+#next14 {
+  display: none;
+  padding: 7px;
+  width: 65px;
+  text-align: center;
+  background-color: rgb(8, 4, 1);
+  color: white;
+  font-family: "Lato", sans-serif;
+  border-radius: 4px;
+  border-color: rgb(8, 4, 1);
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+#next1:hover {
+  transform: scale(1.03);
+  background: rgb(182, 178, 178);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(182, 178, 178);
+}
+
+#next2:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next3:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next4:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next5:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next6:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next7:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#next8:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+}
+
+#btn2 {
+  display: none;
+  padding: 15px;
+  width: 200px;
+  background-color: rgba(8, 4, 0, 0.925);
+  color: white;
+  font-family: "Lato", sans-serif;
+  border-radius: 4px;
+  border-color: rgba(22, 10, 2, 0.377);
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+#btn2:hover {
+  transform: scale(1.03);
+  background: rgb(201, 194, 190);
+  color: black;
+  cursor: pointer;
+  transition: 1.3s;
+  border-color: rgb(201, 194, 190);
+}
+
+#sly {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#sly h1 {
+  width: 920px;
+  padding: 30px;
+  margin-bottom: 1px;
+  font-size: 50px;
+  background-color: rgb(3, 88, 3);
+}
+
+#sly p {
+  width: 920px;
+  padding: 25px 30px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  word-spacing: 1.8px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+#gryff {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#gryff h1 {
+  width: 920px;
+  padding: 30px;
+  margin-bottom: 1px;
+  font-size: 50px;
+  background-color: rgb(114, 3, 3);
+}
+
+#gryff p {
+  text-align: center;
+  width: 920px;
+  padding: 25px 30px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  word-spacing: 1.8px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(243, 168, 7, 0.945);
+}
+
+#huff {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#huff h1 {
+  width: 920px;
+  padding: 30px;
+  margin-bottom: 1px;
+  font-size: 50px;
+  background-color: rgb(223, 184, 10);
+}
+
+#huff p {
+  width: 920px;
+  padding: 25px 30px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  word-spacing: 1.8px;
+  color: rgb(252, 252, 252);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(3, 3, 3, 0.801);
+}
+
+#raven {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#raven h1 {
+  width: 920px;
+  padding: 30px;
+  margin-bottom: 1px;
+  font-size: 50px;
+  background-color: rgb(2, 1, 44);
+}
+
+#raven p {
+  width: 920px;
+  padding: 25px 30px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  word-spacing: 1.8px;
+  color: rgb(245, 241, 241);
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(122, 73, 8, 0.87);
+}
