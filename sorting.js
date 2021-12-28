@@ -156,106 +156,88 @@ var context = {
   /*
     Elemento form
    */
-  form: null,
-  btn1: null,
-  btn2: null,
-
-  form1: null,
-  next1: null,
-  form2: null,
-  next2: null,
-  form3: null,
-  next3: null,
-  form4: null,
-  next4: null,
-  form5: null,
-  next5: null,
-  form6: null,
-  next6: null,
-  form7: null,
-  next7: null,
-  form8: null,
-  next8: null,
-  form9: null,
+  btn: [],
+  form: [],
+  next: [],
 };
+
 
 function questions() {
   // context.form = document.getElementById("form");
 
   for (var i = 1; i <= 2; i++) {
-    context[`btn${[i]}`] = document.getElementById(`btn${[i]}`)
+    context.btn[i] = document.getElementById(`btn${[i]}`)
   }
-
   for (var i = 1; i <= 9; i++) {
-    context[`form${[i]}`] = document.getElementById(`form${[i]}`);
+    context.form[i] = document.getElementById(`form${[i]}`);
   }
   for (var i = 1; i <= 8; i++) {
-    context[`next${[i]}`] = document.getElementById(`next${[i]}`);
+    context.next[i] = document.getElementById(`next${[i]}`);
   }
 
 }
 
 //Formulário aparece ao clicar no botão
 function beginCeremony() {
-  context.btn1.style.display = "none";
-  context.form1.style.display = "block";
-  context.next1.style.display = "block";
+  context.btn[1].style.display = "none";
+  context.form[1].style.display = "block";
+  context.next[1].style.display = "block";
 }
 
 function primeiroNext() {
-  context.next1.style.display = "none";
-  context.next2.style.display = "block";
-  context.form1.style.display = "none";
-  context.form2.style.display = "block";
+  context.next[1].style.display = "none";
+  context.next[2].style.display = "block";
+  context.form[1].style.display = "none";
+  context.form[2].style.display = "block";
 }
 
 function segundoNext() {
-  context.next2.style.display = "none";
-  context.next3.style.display = "block";
-  context.form2.style.display = "none";
-  context.form3.style.display = "block";
+  context.next[2].style.display = "none";
+  context.next[3].style.display = "block";
+  context.form[2].style.display = "none";
+  context.form[3].style.display = "block";
 }
 
 function terceiroNext() {
-  context.next3.style.display = "none";
-  context.next4.style.display = "block";
-  context.form3.style.display = "none";
-  context.form4.style.display = "block";
+  context.next[3].style.display = "none";
+  context.next[4].style.display = "block";
+  context.form[3].style.display = "none";
+  context.form[4].style.display = "block";
 }
 
 function quartoNext() {
-  context.next4.style.display = "none";
-  context.next5.style.display = "block";
-  context.form4.style.display = "none";
-  context.form5.style.display = "block";
+  context.next[4].style.display = "none";
+  context.next[5].style.display = "block";
+  context.form[4].style.display = "none";
+  context.form[5].style.display = "block";
 }
 
 function quintoNext() {
-  context.next5.style.display = "none";
-  context.next6.style.display = "block";
-  context.form5.style.display = "none";
-  context.form6.style.display = "block";
+  context.next[5].style.display = "none";
+  context.next[6].style.display = "block";
+  context.form[5].style.display = "none";
+  context.form[6].style.display = "block";
 }
 
 function sextoNext() {
-  context.next6.style.display = "none";
-  context.form6.style.display = "none";
-  context.next7.style.display = "block";
-  context.form7.style.display = "block";
+  context.next[6].style.display = "none";
+  context.form[6].style.display = "none";
+  context.next[7].style.display = "block";
+  context.form[7].style.display = "block";
 }
 
 function setimoNext() {
-  context.next7.style.display = "none";
-  context.form7.style.display = "none";
-  context.next8.style.display = "block";
-  context.form8.style.display = "block";
+  context.next[7].style.display = "none";
+  context.form[7].style.display = "none";
+  context.next[8].style.display = "block";
+  context.form[8].style.display = "block";
 }
 
 function oitavoNext() {
-  context.next8.style.display = "none";
-  context.form8.style.display = "none";
-  context.form9.style.display = "block";
-  context.btn2.style.display = "block";
+  context.next[8].style.display = "none";
+  context.form[8].style.display = "none";
+  context.form[9].style.display = "block";
+  context.btn[2].style.display = "block";
 }
 
 function finalizar() {
@@ -311,9 +293,9 @@ function finalizar() {
 
   
   // Display formulário e botões como none
-  form9.style.display = "none";
-  btn1.style.display = "none";
-  btn2.style.display = "none";
+  context.form[9].style.display = "none";
+  context.btn[1].style.display = "none";
+  context.btn[2].style.display = "none";
 
   // Revela a casa
   var sly = document.getElementById("sly");
