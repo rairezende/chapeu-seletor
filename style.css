@@ -391,6 +391,7 @@ body {
 fieldset {
   width: 270px;
   padding-bottom: 0px;
+  border: 0px;
 }
 
 .form-container{ 
@@ -399,7 +400,11 @@ fieldset {
 }
 
 legend {
-  border-radius: 15%;
+  border-radius: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: rgba(241, 238, 238, 0.911);
   color: black;
 }
