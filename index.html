@@ -1,212 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorting Hat</title>
-  <link href="style.css" rel="stylesheet">
-  <script src="sorting.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Hat</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="sorting.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  
-</head>
+  <body id="hall">
+    <header>
+      <!-- <h1>Chapéu Seletor</h1> -->
+    </header>
 
-<body id="hall">
-  <header>
-    <!-- <h1>Chapéu Seletor</h1> -->
-  </header>
-
-  <section >
-    
-    <img class="hat" id="hatid" src="hat.png" alt="sorting hat">
-    <br>
-    <input id="btn1" type="button" value="Iniciar Cerimônia" onclick="beginCeremony()">
+    <section>
+      <img class="hat" id="hatid" src="hat.png" alt="sorting hat" />
+      <br />
+      <input
+        id="btn1"
+        type="button"
+        value="Iniciar Cerimônia"
+        onclick="beginCeremony()"
+      />
       <div id="form">
-      <fieldset id="form1">
-        <legend>O que te interessa mais?</legend>
-          <label for="família"><input type="radio" name="social" id="família" class="slytherin" value="1">Família</label>
-          <label for="romance"><input type="radio" name="social" id="romance" class="gryffindor" value="1">Romance</label>
-          <label for="desconhecidos"><input type="radio" name="social" id="desconhecidos" class="ravenclaw" value="1">Desconhecidos</label>
-          <label for="amigos"><input type="radio" name="social" id="amigos" class="hufflepuff" value="1">Amigos</label>
-      </fieldset>
+        <fieldset id="form1">
+          <legend>O que te interessa mais?</legend>
+          <label for="família"
+            ><input
+              type="radio"
+              name="social"
+              id="família"
+              class="slytherin"
+              value="1"
+            />Família</label
+          >
+          <label for="romance"
+            ><input
+              type="radio"
+              name="social"
+              id="romance"
+              class="gryffindor"
+              value="1"
+            />Romance</label
+          >
+          <label for="desconhecidos"
+            ><input
+              type="radio"
+              name="social"
+              id="desconhecidos"
+              class="ravenclaw"
+              value="1"
+            />Desconhecidos</label
+          >
+          <label for="amigos"
+            ><input
+              type="radio"
+              name="social"
+              id="amigos"
+              class="hufflepuff"
+              value="1"
+            />Amigos</label
+          >
+        </fieldset>
 
-      <div class="next-button">
-      <input id="next1" type="button" value=">" onclick="primeiroNext()">
-      </div>
-
-      <fieldset id="form2">
-        <legend>Qual é o seu preferido?</legend>
-          <label for="festa-junina"><input type="radio" name="feriado" id="festa-junina" class="hufflepuff" value="1">Festa Junina</label>
-          <label for="natal"><input type="radio" name="feriado" id="natal" class="slytherin" value="1">Natal</label>
-          <label for="carnaval"><input type="radio" name="feriado" id="carnaval" class="gryffindor" value="1">Carnaval</label>
-          <label for="ano-novo"><input type="radio" name="feriado" id="ano-novo" class="ravenclaw" value="1">Ano Novo</label>
-      </fieldset>
-
-      <div class ="next-button">
-      <input id="next2" type="button" value=">" onclick="segundoNext()">
-      </div>
-
-     <fieldset id="form3">
-      <legend>Qual é mais prazeroso?</legend>
-        <label for="viajar"><input type="radio" name="prazer" id="viajar" class="gryffindor" value= "1">Viajar</label>
-        <label for="aprender"><input type="radio" name="prazer" id="aprender" class="ravenclaw" value="1">Aprender</label>
-        <label for="acolher"><input type="radio" name="prazer" id="acolher" class="hufflepuff" value= "1">Acolher</label>
-        <label for="relaxar"><input type="radio" name="prazer" id="relaxar" class="slytherin" value="1">Relaxar</label>
-      </fieldset>
-
-      <div class ="next-button">
-      <input id="next3" type="button" value=">" onclick="terceiroNext()">
-      </div>
-
-      <fieldset id="form4">
-        <legend>O que te provoca mais medo?</legend>
-          <label for="solidão"><input type="radio" name="medo" id="solidão" class="slytherin" value="1">Solidão</label>
-          <label for="propósito"><input type="radio" name="medo" id="propósito" class="hufflepuff" value="1">Falta de propósito</label>
-          <label for="monotonia"><input type="radio" name="medo" id="monotonia" class="gryffindor" value="1">Monotonia</label>
-          <label for="imutável"><input type="radio" name="medo" id="imutável" class="ravenclaw" value="1">O imutável</label>
-      </fieldset>
-
-      <div class ="next-button">
-      <input id="next4" type="button" value=">" onclick="quartoNext()">
-      </div>
-
-     <fieldset id="form5">
-      <legend>O que você busca?</legend>
-        <label for="constância"><input type="radio" name="busca" id="constância" class="hufflepuff" value="1">Constância</label>
-        <label for="liberdade"><input type="radio" name="busca" id="liberdade" class="gryffindor" value="1">Liberdade</label>
-        <label for="independência"><input type="radio" name="busca" id="independência" class="slytherin" value="1">Independência</label>
-        <label for="novidade"><input type="radio" name="busca" id="novidade" class="ravenclaw" value="1">Novidade</label>
-     </fieldset>
-
-     <div class ="next-button">
-     <input id="next5" type="button" value=">" onclick="quintoNext()">
-     </div>
-
-     <fieldset id="form6">
-      <legend>O que te atrai?</legend>
-        <label for="competência"><input type="radio" name="atrai" id="competência" class="slytherin" value="1">Competência</label>
-        <label for="lealdade"><input type="radio" name="atrai" id="lealdade" class="hufflepuff" value="1">Lealdade</label>
-        <label for="perspicácia"><input type="radio" name="atrai" id="perspicácia" class="ravenclaw" value="1">Perspicácia</label>
-        <label for="dignidade"><input type="radio" name="atrai" id="dignidade" class="gryffindor" value="1">Dignidade</label>
-      </fieldset>
-
-      <div class ="next-button">
-      <input id="next6" type="button" value=">" onclick="sextoNext()">
-      </div>
-
-     <fieldset id="form7">
-      <legend>Qual traço se destaca em você?</legend>
-        <label for="gentileza"><input type="radio" name="destaque" id="gentileza" class="hufflepuff" value="1">Gentileza</label>
-        <label for="paciência"><input type="radio" name="destaque" id="paciência" class="ravenclaw" value="1">Paciência</label>
-        <label for="determinação"><input type="radio" name="destaque" id="determinação" class="slytherin" value="1">Determinação</label>
-        <label for="audacia"><input type="radio" name="destaque" id="audacia" class="gryffindor" value="1">Audácia</label>
-      </fieldset>
-    
-    <div class ="next-button">
-        <input id="next7" type="button" value=">" onclick="setimoNext()">
+        <div class="next-button">
+          <input id="next1" type="button" value=">" onclick="primeiroNext()" />
         </div>
-  
-    <fieldset id="form8">
-      <legend>O que você pensa de tradição?</legend>
-        <label for="laços"><input type="radio" name="tradição" id="laços" class="hufflepuff" value="1">Estreita laços</label>
-        <label for="passado"><input type="radio" name="tradição" id="passado" class="ravenclaw" value="1">Te prendem ao passado</label>
-        <label for="comunidade"><input type="radio" name="tradição" id="comunidade" class="slytherin" value="1">Mantém uma comunidade</label>
-        <label for="prova"><input type="radio" name="tradição" id="prova" class="gryffindor" value="1">Tem costumes que colocam à prova</label>
-    </fieldset>
 
-    <div class ="next-button">
-      <input id="next8" type="button" value=">" onclick="oitavoNext()">
+        <fieldset id="form2">
+          <legend>Qual é o seu preferido?</legend>
+          <label for="festa-junina"
+            ><input
+              type="radio"
+              name="feriado"
+              id="festa-junina"
+              class="hufflepuff"
+              value="1"
+            />Festa Junina</label
+          >
+          <label for="natal"
+            ><input
+              type="radio"
+              name="feriado"
+              id="natal"
+              class="slytherin"
+              value="1"
+            />Natal</label
+          >
+          <label for="carnaval"
+            ><input
+              type="radio"
+              name="feriado"
+              id="carnaval"
+              class="gryffindor"
+              value="1"
+            />Carnaval</label
+          >
+          <label for="ano-novo"
+            ><input
+              type="radio"
+              name="feriado"
+              id="ano-novo"
+              class="ravenclaw"
+              value="1"
+            />Ano Novo</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next2" type="button" value=">" onclick="segundoNext()" />
+        </div>
+
+        <fieldset id="form3">
+          <legend>Qual é mais prazeroso?</legend>
+          <label for="viajar"
+            ><input
+              type="radio"
+              name="prazer"
+              id="viajar"
+              class="gryffindor"
+              value="1"
+            />Viajar</label
+          >
+          <label for="aprender"
+            ><input
+              type="radio"
+              name="prazer"
+              id="aprender"
+              class="ravenclaw"
+              value="1"
+            />Aprender</label
+          >
+          <label for="acolher"
+            ><input
+              type="radio"
+              name="prazer"
+              id="acolher"
+              class="hufflepuff"
+              value="1"
+            />Acolher</label
+          >
+          <label for="relaxar"
+            ><input
+              type="radio"
+              name="prazer"
+              id="relaxar"
+              class="slytherin"
+              value="1"
+            />Relaxar</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next3" type="button" value=">" onclick="terceiroNext()" />
+        </div>
+
+        <fieldset id="form4">
+          <legend>O que te provoca mais medo?</legend>
+          <label for="solidão"
+            ><input
+              type="radio"
+              name="medo"
+              id="solidão"
+              class="slytherin"
+              value="1"
+            />Solidão</label
+          >
+          <label for="propósito"
+            ><input
+              type="radio"
+              name="medo"
+              id="propósito"
+              class="hufflepuff"
+              value="1"
+            />Falta de propósito</label
+          >
+          <label for="monotonia"
+            ><input
+              type="radio"
+              name="medo"
+              id="monotonia"
+              class="gryffindor"
+              value="1"
+            />Monotonia</label
+          >
+          <label for="imutável"
+            ><input
+              type="radio"
+              name="medo"
+              id="imutável"
+              class="ravenclaw"
+              value="1"
+            />O imutável</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next4" type="button" value=">" onclick="quartoNext()" />
+        </div>
+
+        <fieldset id="form5">
+          <legend>O que você busca?</legend>
+          <label for="constância"
+            ><input
+              type="radio"
+              name="busca"
+              id="constância"
+              class="hufflepuff"
+              value="1"
+            />Constância</label
+          >
+          <label for="liberdade"
+            ><input
+              type="radio"
+              name="busca"
+              id="liberdade"
+              class="gryffindor"
+              value="1"
+            />Liberdade</label
+          >
+          <label for="independência"
+            ><input
+              type="radio"
+              name="busca"
+              id="independência"
+              class="slytherin"
+              value="1"
+            />Independência</label
+          >
+          <label for="novidade"
+            ><input
+              type="radio"
+              name="busca"
+              id="novidade"
+              class="ravenclaw"
+              value="1"
+            />Novidade</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next5" type="button" value=">" onclick="quintoNext()" />
+        </div>
+
+        <fieldset id="form6">
+          <legend>O que te atrai?</legend>
+          <label for="competência"
+            ><input
+              type="radio"
+              name="atrai"
+              id="competência"
+              class="slytherin"
+              value="1"
+            />Competência</label
+          >
+          <label for="lealdade"
+            ><input
+              type="radio"
+              name="atrai"
+              id="lealdade"
+              class="hufflepuff"
+              value="1"
+            />Lealdade</label
+          >
+          <label for="perspicácia"
+            ><input
+              type="radio"
+              name="atrai"
+              id="perspicácia"
+              class="ravenclaw"
+              value="1"
+            />Perspicácia</label
+          >
+          <label for="dignidade"
+            ><input
+              type="radio"
+              name="atrai"
+              id="dignidade"
+              class="gryffindor"
+              value="1"
+            />Dignidade</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next6" type="button" value=">" onclick="sextoNext()" />
+        </div>
+
+        <fieldset id="form7">
+          <legend>Qual traço se destaca em você?</legend>
+          <label for="gentileza"
+            ><input
+              type="radio"
+              name="destaque"
+              id="gentileza"
+              class="hufflepuff"
+              value="1"
+            />Gentileza</label
+          >
+          <label for="paciência"
+            ><input
+              type="radio"
+              name="destaque"
+              id="paciência"
+              class="ravenclaw"
+              value="1"
+            />Paciência</label
+          >
+          <label for="determinação"
+            ><input
+              type="radio"
+              name="destaque"
+              id="determinação"
+              class="slytherin"
+              value="1"
+            />Determinação</label
+          >
+          <label for="audacia"
+            ><input
+              type="radio"
+              name="destaque"
+              id="audacia"
+              class="gryffindor"
+              value="1"
+            />Audácia</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next7" type="button" value=">" onclick="setimoNext()" />
+        </div>
+
+        <fieldset id="form8">
+          <legend>O que você pensa de tradição?</legend>
+          <label for="laços"
+            ><input
+              type="radio"
+              name="tradição"
+              id="laços"
+              class="hufflepuff"
+              value="1"
+            />Estreita laços</label
+          >
+          <label for="passado"
+            ><input
+              type="radio"
+              name="tradição"
+              id="passado"
+              class="ravenclaw"
+              value="1"
+            />Te prendem ao passado</label
+          >
+          <label for="comunidade"
+            ><input
+              type="radio"
+              name="tradição"
+              id="comunidade"
+              class="slytherin"
+              value="1"
+            />Mantém uma comunidade</label
+          >
+          <label for="prova"
+            ><input
+              type="radio"
+              name="tradição"
+              id="prova"
+              class="gryffindor"
+              value="1"
+            />Tem costumes que colocam à prova</label
+          >
+        </fieldset>
+
+        <div class="next-button">
+          <input id="next8" type="button" value=">" onclick="oitavoNext()" />
+        </div>
+
+        <fieldset id="form9">
+          <legend>Qual é sua opinião sobre amigos?</legend>
+          <label for="necessidade"
+            ><input
+              type="radio"
+              name="amigos"
+              id="necessidade"
+              class="hufflepuff"
+              value="1"
+            />São necessidade humana</label
+          >
+          <label for="cuidado"
+            ><input
+              type="radio"
+              name="amigos"
+              id="cuidado"
+              class="ravenclaw"
+              value="1"
+            />Deve-se escolher com cuidado</label
+          >
+          <label for="estímulo"
+            ><input
+              type="radio"
+              name="amigos"
+              id="estímulo"
+              class="slytherin"
+              value="1"
+            />Te estimulam a progredir</label
+          >
+          <label for="companheiros"
+            ><input
+              type="radio"
+              name="amigos"
+              id="companheiros"
+              class="gryffindor"
+              value="1"
+            />São companheiros para toda hora</label
+          >
+        </fieldset>
+        <div class="btn2">
+          <input
+            id="btn2"
+            type="button"
+            value="Deixe o chapéu decidir..."
+            onclick="finalizar()"
+          />
+        </div>
+
+        <fieldset id="sly-or-gryff">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="slytherin"
+            ><input
+              type="radio"
+              name="par1"
+              id="slytherin"
+              class="slytherin"
+              value="1"
+            />Sonserina</label
+          >
+          <label for="gryffindor"
+            ><input
+              type="radio"
+              name="par1"
+              id="gryffindor"
+              class="gryffindor"
+              value="1"
+            />Grifinória</label
+          >
+        </fieldset>
+        <input id="next9" type="button" value=">" onclick="finalizar()" />
+
+        <fieldset id="sly-or-huff">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="slytherin"
+            ><input
+              type="radio"
+              name="par2"
+              id="slytherin"
+              class="slytherin"
+              value="1"
+            />Sonserina</label
+          >
+          <label for="hufflepuff"
+            ><input
+              type="radio"
+              name="par2"
+              id="hufflepuff"
+              class="hufflepuff"
+              value="1"
+            />Lufa-Lufa</label
+          >
+        </fieldset>
+        <input id="next10" type="button" value=">" onclick="finalizar()" />
+
+        <fieldset id="sly-or-raven">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="slytherin"
+            ><input
+              type="radio"
+              name="par3"
+              id="slytherin"
+              class="slytherin"
+              value="1"
+            />Sonserina</label
+          >
+          <label for="ravenclaw"
+            ><input
+              type="radio"
+              name="par3"
+              id="ravenclaw"
+              class="ravenclaw"
+              value="1"
+            />Corvinal</label
+          >
+        </fieldset>
+        <input id="next11" type="button" value=">" onclick="finalizar()" />
+
+        <fieldset id="gryff-or-huff">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="gryffindor"
+            ><input
+              type="radio"
+              name="par4"
+              id="gryffindor"
+              class="gryffindor"
+              value="1"
+            />Grifinória</label
+          >
+          <label for="hufflepuff"
+            ><input
+              type="radio"
+              name="par4"
+              id="hufflepuff"
+              class="hufflepuff"
+              value="1"
+            />Lufa-Lufa</label
+          >
+        </fieldset>
+        <input id="next12" type="button" value=">" onclick="finalizar()" />
+
+        <fieldset id="gryff-or-raven">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="gryffindor"
+            ><input
+              type="radio"
+              name="par5"
+              id="gryffindor"
+              class="gryffindor"
+              value="1"
+            />Grifinória</label
+          >
+          <label for="ravenclaw"
+            ><input
+              type="radio"
+              name="par5"
+              id="ravenclaw"
+              class="ravenclaw"
+              value="1"
+            />Corvinal</label
+          >
+        </fieldset>
+        <input id="next13" type="button" value=">" onclick="finalizar()" />
+
+        <fieldset id="huff-or-raven">
+          <legend>
+            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
+            dessas casas você chamará de lar?
+          </legend>
+          <label for="hufflepuff"
+            ><input
+              type="radio"
+              name="par6"
+              id="hufflepuff"
+              class="hufflepuff"
+              value="1"
+            />Lufa-Lufa</label
+          >
+          <label for="ravenclaw"
+            ><input
+              type="radio"
+              name="par6"
+              id="ravenclaw"
+              class="ravenclaw"
+              value="1"
+            />Corvinal</label
+          >
+        </fieldset>
+        <input id="next14" type="button" value=">" onclick="finalizar()" />
       </div>
+    </section>
 
-     <fieldset id="form9">
-      <legend>Qual é sua opinião sobre amigos?</legend>
-        <label for="necessidade"><input type="radio" name="amigos" id="necessidade" class="hufflepuff" value="1">São necessidade humana</label>
-        <label for="cuidado"><input type="radio" name="amigos" id="cuidado" class="ravenclaw" value="1">Deve-se escolher com cuidado</label>
-        <label for="estímulo"><input type="radio" name="amigos" id="estímulo" class="slytherin" value="1">Te estimulam a progredir</label>
-        <label for="companheiros"><input type="radio" name="amigos" id="companheiros" class="gryffindor" value="1">São companheiros para toda hora</label>
-      </fieldset>
-      <div class= btn2>
-      <input id="btn2" type="button" value="Deixe o chapéu decidir..." onclick="finalizar()">
-      </div>
+    <div id="sly">
+      <h1>Sonserina</h1>
+      <p>
+        Orgulhe-se, pois suas novas cores são verde e prata! Embora a casa da
+        Sonserina não tenha cultivado uma boa reputação em Hogwarts e, por
+        consequência, na sociedade bruxa da Grã-Bretanha ao longo dos anos
+        (obrigada por nada, Voldemort e Salazar Slytherin) suas características
+        nada têm a ver com o lado das trevas. Acontece que alguns de nossos
+        traços, como determinação, por exemplo, podem nos levar a extremos se
+        estivermos muito distraídos. Assim sendo, cuide dos seus princípios e
+        pese suas escolhas.
+      </p>
 
-      <fieldset id="sly-or-gryff">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="slytherin"><input type="radio" name="par1" id="slytherin" class="slytherin" value="1">Sonserina</label>
-        <label for="gryffindor"><input type="radio" name="par1" id="gryffindor" class="gryffindor" value="1">Grifinória</label>
-      </fieldset>
-      <input id="next9" type="button" value=">" onclick="finalizar()">
+      <p>
+        Preze por sua ambição e liderança naturais e conseguirá alcançar
+        absolutamente qualquer coisa que deseja: seja ser dono de um império,
+        seja viver em uma casinha à beira-mar com seu pet. É na Sonserina que
+        você fará amigos para toda a vida e que te acompanharão no caminho para
+        a realização dos seus sonhos. Eles te darão suporte e estímulo, portanto
+        escolha-os bem! Você também saberá encontrar amigos com as qualidades
+        certas em outras casas, cultivando uma variedade de habilidades
+        diferentes em seu círculo social. Confie sempre no seu instinto: nem
+        sempre o portador de maior poder será sua melhor companhia, seja
+        cauteloso com as amizades!
+      </p>
+    </div>
+    <div id="gryff">
+      <h1>Grifinória</h1>
+      <p>
+        Alegre-se, pois suas cores são vermelho e dourado! Sua entrada nessa
+        casa é o início de uma nova aventura: é na Grifinória que você
+        encontrará uma família para todos os momentos, que topará ir em todos os
+        lugares que você convidar, que te fornecerá suporte e cultivará sua
+        coragem sempre que encarar os momentos difíceis da vida.
+      </p>
+      <p>
+        Você aprenderá a ver a vida como o explorador que você é: sempre pronto
+        para conhecer novas pessoas e lugares. Na Grifinória você alimentará sua
+        força interior e nunca abaixará a cabeça para as regras com as quais não
+        concorda, além de estar sempre presente para erguer os oprimidos e
+        defendê-los da injustiça. A chama que arde em seu coração jamais deve
+        ser apagada.
+      </p>
+    </div>
+    <div id="huff">
+      <h1>Lufa-Lufa</h1>
+      <p>
+        É na Lufa-Lufa que se encontra prazer nas pequenas coisas, é a casa que
+        presta atenção às chuvas de verão e aos calafrios do outono. Aqui você
+        alimentará cada dia mais seu instinto acolhedor e sua força de vontade:
+        todos os seus amigos conhecerão sua lealdade e todos admirarão sua
+        dedicação aos trabalhos que se dispõe a fazer.
+      </p>
+      <p>
+        Você conhecerá bem quais amigos são confiáveis e poderá se surpreender
+        com os moradores da Sonserina, que também prezam por amizades leais. Seu
+        círculo social deve funcionar como uma rede de apoio e todos deverão
+        garantir uma vida estável com a ajuda do grupo. Agora, preste atenção:
+        sua dedicação e trabalho duro só florescem quando você faz o que ama!
+        Jamais se obrigue a uma rotina que não lhe traga felicidade.
+      </p>
+    </div>
+    <div id="raven">
+      <h1>Corvinal</h1>
+      <p>
+        A casa azul e bronze é onde você encontrará os amigos mais excêntricos:
+        na Corvinal você conhecerá muitos pioneiros de pensamento e também será
+        um deles. Aqui você deverá aprender a lidar com a ansiedade que o
+        conceito de tempo lhe traz, pois enquanto são prazerosas suas infinitas
+        reflexões sobre a vida, as mesmas podem se tornar um peso que te
+        envelhecerá em espírito.
+      </p>
+      <p>
+        Você crescerá na Corvinal e desenvolverá a sabedoria pela qual essa casa
+        é famosa, o que te deixará pronto para transformar sua vida em uma tela
+        na qual pintará com as cores mais variadas. Sua ávida curiosidade
+        alimentará sua alma e o conehcimento adquirido te sustentará em um ciclo
+        de pensamento e recompensa sempre prazeroso.
+      </p>
+    </div>
 
-      <fieldset id="sly-or-huff">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="slytherin"><input type="radio" name="par2" id="slytherin" class="slytherin" value="1">Sonserina</label>
-        <label for="hufflepuff"><input type="radio" name="par2" id="hufflepuff" class="hufflepuff" value="1">Lufa-Lufa</label>
-      </fieldset>
-      <input id="next10" type="button" value=">" onclick="finalizar()">
-
-      <fieldset id="sly-or-raven">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="slytherin"><input type="radio" name="par3" id="slytherin" class="slytherin" value="1">Sonserina</label>
-        <label for="ravenclaw"><input type="radio" name="par3" id="ravenclaw" class="ravenclaw" value="1">Corvinal</label>
-      </fieldset>
-      <input id="next11" type="button" value=">" onclick="finalizar()">
-
-      <fieldset id="gryff-or-huff">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="gryffindor"><input type="radio" name="par4" id="gryffindor" class="gryffindor" value="1">Grifinória</label>
-        <label for="hufflepuff"><input type="radio" name="par4" id="hufflepuff" class="hufflepuff" value="1">Lufa-Lufa</label>
-      </fieldset>
-      <input id="next12" type="button" value=">" onclick="finalizar()">
-
-      <fieldset id="gryff-or-raven">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="gryffindor"><input type="radio" name="par5" id="gryffindor" class="gryffindor" value="1">Grifinória</label>
-        <label for="ravenclaw"><input type="radio" name="par5" id="ravenclaw" class="ravenclaw" value="1">Corvinal</label>
-      </fieldset>
-      <input id="next13" type="button" value=">" onclick="finalizar()">
-
-      <fieldset id="huff-or-raven">
-        <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
-        <label for="hufflepuff"><input type="radio" name="par6" id="hufflepuff" class="hufflepuff" value="1">Lufa-Lufa</label>
-        <label for="ravenclaw"><input type="radio" name="par6" id="ravenclaw" class="ravenclaw" value="1">Corvinal</label>
-      </fieldset>
-      <input id="next14" type="button" value=">" onclick="finalizar()">
-
-      </div>
-     
-
-  </section>
-
-  <div id="sly">
-    <h1>Sonserina</h1>
-    <p>Orgulhe-se, pois suas novas cores são verde e prata! Embora a casa da Sonserina não tenha cultivado uma boa reputação em Hogwarts e, por consequência, na sociedade bruxa da Grã-Bretanha ao longo dos anos (obrigada por nada, Voldemort e Salazar Slytherin) suas características nada têm a ver com o lado das trevas. Acontece que alguns de nossos traços, como determinação, por exemplo, podem nos levar a extremos se estivermos muito distraídos. Assim sendo, cuide dos seus princípios e pese suas escolhas.</p>
-
-    <p>Preze por sua ambição e liderança naturais e conseguirá alcançar absolutamente qualquer coisa que deseja: seja ser dono de um império, seja viver em uma casinha à beira-mar com seu pet. É na Sonserina que você fará amigos para toda a vida e que te acompanharão no caminho para a realização dos seus sonhos. Eles te darão suporte e estímulo, portanto escolha-os bem! Você também saberá encontrar amigos com as qualidades certas em outras casas, cultivando uma variedade de habilidades diferentes em seu círculo social. Confie sempre no seu instinto: nem sempre o portador de maior poder será sua melhor companhia, seja cauteloso com as amizades!</p>
-
-  
-  </div>
-  <div id="gryff">
-    <h1>Grifinória</h1>
-    <p>Alegre-se, pois suas cores são vermelho e dourado! Sua entrada nessa casa é o início de uma nova aventura: é na Grifinória que você encontrará uma família para todos os momentos, que topará ir em todos os lugares que você convidar, que te fornecerá suporte e cultivará sua coragem sempre que encarar os momentos difíceis da vida.</p>
-    <p>Você aprenderá a ver a vida como o explorador que você é: sempre pronto para conhecer novas pessoas e lugares. Na Grifinória você alimentará sua força interior e nunca abaixará a cabeça para as regras com as quais não concorda, além de estar sempre presente para erguer os oprimidos e defendê-los da injustiça. A chama que arde em seu coração jamais deve ser apagada.</p>
-
-  </div>
-  <div id="huff">
-    <h1>Lufa-Lufa</h1>
-    <p>É na Lufa-Lufa que se encontra prazer nas pequenas coisas, é a casa que presta atenção às chuvas de verão e aos calafrios do outono. Aqui você alimentará cada dia mais seu instinto acolhedor e sua força de vontade: todos os seus amigos conhecerão sua lealdade e todos admirarão sua dedicação aos trabalhos que se dispõe a fazer.</p>
-    <p>Você conhecerá bem quais amigos são confiáveis e poderá se surpreender com os moradores da Sonserina, que também prezam por amizades leais. Seu círculo social deve funcionar como uma rede de apoio e todos deverão garantir uma vida estável com a ajuda do grupo. Agora, preste atenção: sua dedicação e trabalho duro só florescem quando você faz o que ama! Jamais se obrigue a uma rotina que não lhe traga felicidade.</p>
-  </div>
-  <div id="raven">
-    <h1>Corvinal</h1>
-    <p>A casa azul e bronze é onde você encontrará os amigos mais excêntricos: na Corvinal você conhecerá muitos pioneiros de pensamento e também será um deles. Aqui você deverá aprender a lidar com a ansiedade que o conceito de tempo lhe traz, pois enquanto são prazerosas suas infinitas reflexões sobre a vida, as mesmas podem se tornar um peso que te envelhecerá em espírito.</p>
-    <p>Você crescerá na Corvinal e desenvolverá a sabedoria pela qual essa casa é famosa, o que te deixará pronto para transformar sua vida em uma tela na qual pintará com as cores mais variadas. Sua ávida curiosidade alimentará sua alma e o conehcimento adquirido te sustentará em um ciclo de pensamento e recompensa sempre prazeroso.</p>
-  </div>
-
-  <script>
-    questions()
-  </script>
-</body>
-
+    <script>
+      questions();
+    </script>
+  </body>
 </html>

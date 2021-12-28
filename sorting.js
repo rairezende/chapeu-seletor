@@ -150,8 +150,6 @@ function createDiv(height, width) {
 }
 // Efeito do cursor
 
-
-
 var context = {
   /*
     Elemento form
@@ -161,12 +159,11 @@ var context = {
   next: [],
 };
 
-
 function questions() {
   // context.form = document.getElementById("form");
 
   for (var i = 1; i <= 2; i++) {
-    context.btn[i] = document.getElementById(`btn${[i]}`)
+    context.btn[i] = document.getElementById(`btn${[i]}`);
   }
   for (var i = 1; i <= 9; i++) {
     context.form[i] = document.getElementById(`form${[i]}`);
@@ -174,7 +171,6 @@ function questions() {
   for (var i = 1; i <= 8; i++) {
     context.next[i] = document.getElementById(`next${[i]}`);
   }
-
 }
 
 //Formulário aparece ao clicar no botão
@@ -291,7 +287,6 @@ function finalizar() {
     ravenSomaValue += parseInt(ravenArray[i].value);
   }
 
-  
   // Display formulário e botões como none
   context.form[9].style.display = "none";
   context.btn[1].style.display = "none";
