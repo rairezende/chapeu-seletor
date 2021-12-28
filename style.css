@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   background: rgb(3, 3, 41);
   color: white;
 }
@@ -373,8 +373,6 @@ legend {
 body {
   font-size: 14px;
   font-weight:100;
-  font
-  
 }
 
 #hall {
@@ -402,6 +400,8 @@ fieldset {
 
 legend {
   border-radius: 15%;
+  background-color: rgba(241, 238, 238, 0.911);
+  color: black;
 }
 
 label {
