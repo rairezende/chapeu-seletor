@@ -16,6 +16,7 @@ header h1 {
 section {
   text-align: center;
   align-items: center;
+  
 }
 
 #hall {
@@ -27,7 +28,8 @@ section {
 }
 
 .hat {
-  margin-top: 65px;
+  margin-top: 40px;
+  /* background-image: url("hat.png"); */
 }
 
 #btn1 {
@@ -99,6 +101,7 @@ section {
 }
 
 fieldset {
+  /* display:flex; */
   margin-top: 40px;
   margin-right: 23%;
   margin-bottom: 50px;
@@ -357,4 +360,90 @@ legend {
   font-size: 17px;
   font-weight: bold;
   background-color: rgba(122, 73, 8, 0.87);
+}
+
+@media only screen and (max-width: 380px) {
+
+#hall {
+  background-repeat: no-repeat;
+  background-position: auto;
+  background-size: cover;
+}
+.container img {
+  max-width:250px;
+  max-height:200px;
+  margin-top: 13%;
+  width: auto;
+  height: auto;
+}
+
+fieldset {
+  width: 270px;
+}
+
+.form-container{ 
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 25px;
+}
+
+#sly {
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#sly h1 {
+  width: 83%
+}
+
+#sly p {
+  width: auto;
+}
+
+#gryff {
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#gryff h1 {
+  width: 83%;
+}
+
+#gryff p {
+  width: auto;
+}
+
+#huff {
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#huff h1 {
+  width: 83%;
+}
+
+#huff p {
+  width: auto;
+}
+
+#raven {
+  max-width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#raven h1 {
+  width: 83%;
+}
+
+#raven p {
+  width: auto;
+}
+
 }

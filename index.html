@@ -20,54 +20,22 @@
       <!-- <h1>Chapéu Seletor</h1> -->
     </header>
 
-    <section>
-      <img class="hat" id="hatid" src="hat.png" alt="sorting hat" />
-      <br />
-      <input
-        id="btn1"
-        type="button"
-        value="Iniciar Cerimônia"
-        onclick="beginCeremony()"
-      />
+    <section class="hat">
+      <div class="container">
+      <img class="hat" id="hatid"  src="hat.png">
+      <br/>
+    </div>
+      <input id="btn1" type="button" value="Iniciar Cerimônia" onclick="beginCeremony()"/>
+
       <div id="form">
         <fieldset id="form1">
           <legend>O que te interessa mais?</legend>
-          <label for="família"
-            ><input
-              type="radio"
-              name="social"
-              id="família"
-              class="slytherin"
-              value="1"
-            />Família</label
-          >
-          <label for="romance"
-            ><input
-              type="radio"
-              name="social"
-              id="romance"
-              class="gryffindor"
-              value="1"
-            />Romance</label
-          >
-          <label for="desconhecidos"
-            ><input
-              type="radio"
-              name="social"
-              id="desconhecidos"
-              class="ravenclaw"
-              value="1"
-            />Desconhecidos</label
-          >
-          <label for="amigos"
-            ><input
-              type="radio"
-              name="social"
-              id="amigos"
-              class="hufflepuff"
-              value="1"
-            />Amigos</label
-          >
+           <div class="form-container">
+            <label for="família"><input type="radio" name="social" id="família" class="slytherin" value="1"/>Família</label>
+            <label for="romance"><input type="radio" name="social" id="romance"class="gryffindor" value="1"/>Romance</label>
+            <label for="desconhecidos"><input type="radio" name="social" id="desconhecidos" class="ravenclaw" value="1"/>Desconhecidos</label>
+            <label for="amigos"><input type="radio" name="social" id="amigos" class="hufflepuff" value="1"/>Amigos</label>
+          </div>
         </fieldset>
 
         <div class="next-button">
@@ -76,42 +44,12 @@
 
         <fieldset id="form2">
           <legend>Qual é o seu preferido?</legend>
-          <label for="festa-junina"
-            ><input
-              type="radio"
-              name="feriado"
-              id="festa-junina"
-              class="hufflepuff"
-              value="1"
-            />Festa Junina</label
-          >
-          <label for="natal"
-            ><input
-              type="radio"
-              name="feriado"
-              id="natal"
-              class="slytherin"
-              value="1"
-            />Natal</label
-          >
-          <label for="carnaval"
-            ><input
-              type="radio"
-              name="feriado"
-              id="carnaval"
-              class="gryffindor"
-              value="1"
-            />Carnaval</label
-          >
-          <label for="ano-novo"
-            ><input
-              type="radio"
-              name="feriado"
-              id="ano-novo"
-              class="ravenclaw"
-              value="1"
-            />Ano Novo</label
-          >
+            <div class="form-container">
+              <label for="festa-junina"><input type="radio" name="feriado" id="festa-junina" class="hufflepuff" value="1"/>Festa Junina</label>
+              <label for="natal"><input type="radio" name="feriado" id="natal" class="slytherin" value="1"/>Natal</label>
+              <label for="carnaval"><input type="radio" name="feriado" id="carnaval" class="gryffindor" value="1"/>Carnaval</label>
+              <label for="ano-novo"><input type="radio" name="feriado" id="ano-novo" class="ravenclaw" value="1"/>Ano Novo</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -120,42 +58,12 @@
 
         <fieldset id="form3">
           <legend>Qual é mais prazeroso?</legend>
-          <label for="viajar"
-            ><input
-              type="radio"
-              name="prazer"
-              id="viajar"
-              class="gryffindor"
-              value="1"
-            />Viajar</label
-          >
-          <label for="aprender"
-            ><input
-              type="radio"
-              name="prazer"
-              id="aprender"
-              class="ravenclaw"
-              value="1"
-            />Aprender</label
-          >
-          <label for="acolher"
-            ><input
-              type="radio"
-              name="prazer"
-              id="acolher"
-              class="hufflepuff"
-              value="1"
-            />Acolher</label
-          >
-          <label for="relaxar"
-            ><input
-              type="radio"
-              name="prazer"
-              id="relaxar"
-              class="slytherin"
-              value="1"
-            />Relaxar</label
-          >
+            <div class="form-container">
+              <label for="viajar"><input type="radio" name="prazer" id="viajar" class="gryffindor" value="1"/>Viajar</label>
+              <label for="aprender"><input type="radio" name="prazer" id="aprender" class="ravenclaw" value="1"/>Aprender</label>
+              <label for="acolher"><input type="radio" name="prazer" id="acolher" class="hufflepuff" value="1"/>Acolher</label>
+              <label for="relaxar"><input type="radio" name="prazer" id="relaxar" class="slytherin" value="1"/>Relaxar</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -164,42 +72,12 @@
 
         <fieldset id="form4">
           <legend>O que te provoca mais medo?</legend>
-          <label for="solidão"
-            ><input
-              type="radio"
-              name="medo"
-              id="solidão"
-              class="slytherin"
-              value="1"
-            />Solidão</label
-          >
-          <label for="propósito"
-            ><input
-              type="radio"
-              name="medo"
-              id="propósito"
-              class="hufflepuff"
-              value="1"
-            />Falta de propósito</label
-          >
-          <label for="monotonia"
-            ><input
-              type="radio"
-              name="medo"
-              id="monotonia"
-              class="gryffindor"
-              value="1"
-            />Monotonia</label
-          >
-          <label for="imutável"
-            ><input
-              type="radio"
-              name="medo"
-              id="imutável"
-              class="ravenclaw"
-              value="1"
-            />O imutável</label
-          >
+            <div class="form-container">
+              <label for="solidão"><input type="radio" name="medo" id="solidão" class="slytherin" value="1"/>Solidão</label>
+              <label for="propósito"><input type="radio" name="medo" id="propósito" class="hufflepuff" value="1"/>Falta de propósito</label>
+              <label for="monotonia"><input type="radio" name="medo" id="monotonia" class="gryffindor" value="1"/>Monotonia</label>
+              <label for="imutável"><input type="radio" name="medo" id="imutável" class="ravenclaw" value="1"/>O imutável</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -208,42 +86,12 @@
 
         <fieldset id="form5">
           <legend>O que você busca?</legend>
-          <label for="constância"
-            ><input
-              type="radio"
-              name="busca"
-              id="constância"
-              class="hufflepuff"
-              value="1"
-            />Constância</label
-          >
-          <label for="liberdade"
-            ><input
-              type="radio"
-              name="busca"
-              id="liberdade"
-              class="gryffindor"
-              value="1"
-            />Liberdade</label
-          >
-          <label for="independência"
-            ><input
-              type="radio"
-              name="busca"
-              id="independência"
-              class="slytherin"
-              value="1"
-            />Independência</label
-          >
-          <label for="novidade"
-            ><input
-              type="radio"
-              name="busca"
-              id="novidade"
-              class="ravenclaw"
-              value="1"
-            />Novidade</label
-          >
+            <div class="form-container">
+              <label for="constância"><input type="radio" name="busca" id="constância" class="hufflepuff" value="1"/>Constância</label>
+              <label for="liberdade"><input type="radio" name="busca" id="liberdade" class="gryffindor" value="1"/>Liberdade</label>
+              <label for="independência"><input type="radio" name="busca" id="independência" class="slytherin" value="1"/>Independência</label>
+              <label for="novidade"><input type="radio" name="busca" id="novidade" class="ravenclaw" value="1"/>Novidade</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -252,42 +100,12 @@
 
         <fieldset id="form6">
           <legend>O que te atrai?</legend>
-          <label for="competência"
-            ><input
-              type="radio"
-              name="atrai"
-              id="competência"
-              class="slytherin"
-              value="1"
-            />Competência</label
-          >
-          <label for="lealdade"
-            ><input
-              type="radio"
-              name="atrai"
-              id="lealdade"
-              class="hufflepuff"
-              value="1"
-            />Lealdade</label
-          >
-          <label for="perspicácia"
-            ><input
-              type="radio"
-              name="atrai"
-              id="perspicácia"
-              class="ravenclaw"
-              value="1"
-            />Perspicácia</label
-          >
-          <label for="dignidade"
-            ><input
-              type="radio"
-              name="atrai"
-              id="dignidade"
-              class="gryffindor"
-              value="1"
-            />Dignidade</label
-          >
+            <div class="form-container">
+              <label for="competência"><input type="radio" name="atrai" id="competência" class="slytherin" value="1"/>Competência</label>
+              <label for="lealdade"><input type="radio" name="atrai" id="lealdade" class="hufflepuff" value="1"/>Lealdade</label>
+              <label for="perspicácia"><input type="radio" name="atrai" id="perspicácia" class="ravenclaw" value="1"/>Perspicácia</label>
+              <label for="dignidade"><input type="radio" name="atrai" id="dignidade" class="gryffindor" value="1"/>Dignidade</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -296,42 +114,12 @@
 
         <fieldset id="form7">
           <legend>Qual traço se destaca em você?</legend>
-          <label for="gentileza"
-            ><input
-              type="radio"
-              name="destaque"
-              id="gentileza"
-              class="hufflepuff"
-              value="1"
-            />Gentileza</label
-          >
-          <label for="paciência"
-            ><input
-              type="radio"
-              name="destaque"
-              id="paciência"
-              class="ravenclaw"
-              value="1"
-            />Paciência</label
-          >
-          <label for="determinação"
-            ><input
-              type="radio"
-              name="destaque"
-              id="determinação"
-              class="slytherin"
-              value="1"
-            />Determinação</label
-          >
-          <label for="audacia"
-            ><input
-              type="radio"
-              name="destaque"
-              id="audacia"
-              class="gryffindor"
-              value="1"
-            />Audácia</label
-          >
+            <div class="form-container">
+              <label for="gentileza"><input type="radio" name="destaque" id="gentileza" class="hufflepuff" value="1"/>Gentileza</label>
+              <label for="paciência"><input type="radio" name="destaque" id="paciência" class="ravenclaw" value="1"/>Paciência</label>
+              <label for="determinação"><input type="radio" name="destaque" id="determinação" class="slytherin" value="1"/>Determinação</label>
+              <label for="audacia"><input type="radio" name="destaque" id="audacia" class="gryffindor" value="1"/>Audácia</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -340,42 +128,12 @@
 
         <fieldset id="form8">
           <legend>O que você pensa de tradição?</legend>
-          <label for="laços"
-            ><input
-              type="radio"
-              name="tradição"
-              id="laços"
-              class="hufflepuff"
-              value="1"
-            />Estreita laços</label
-          >
-          <label for="passado"
-            ><input
-              type="radio"
-              name="tradição"
-              id="passado"
-              class="ravenclaw"
-              value="1"
-            />Te prendem ao passado</label
-          >
-          <label for="comunidade"
-            ><input
-              type="radio"
-              name="tradição"
-              id="comunidade"
-              class="slytherin"
-              value="1"
-            />Mantém uma comunidade</label
-          >
-          <label for="prova"
-            ><input
-              type="radio"
-              name="tradição"
-              id="prova"
-              class="gryffindor"
-              value="1"
-            />Tem costumes que colocam à prova</label
-          >
+            <div class="form-container">
+              <label for="laços"><input type="radio" name="tradição" id="laços" class="hufflepuff" value="1">Estreita laços</label>
+              <label for="passado"><input type="radio" name="tradição" id="passado" class="ravenclaw" value="1"/>Te prendem ao passado</label>
+              <label for="comunidade"><input type="radio" name="tradição" id="comunidade" class="slytherin" value="1"/>Mantém uma comunidade</label>
+              <label for="prova"><input type="radio" name="tradição" id="prova" class="gryffindor" value="1"/>Tem costumes que colocam à prova</label>
+            </div>
         </fieldset>
 
         <div class="next-button">
@@ -384,205 +142,68 @@
 
         <fieldset id="form9">
           <legend>Qual é sua opinião sobre amigos?</legend>
-          <label for="necessidade"
-            ><input
-              type="radio"
-              name="amigos"
-              id="necessidade"
-              class="hufflepuff"
-              value="1"
-            />São necessidade humana</label
-          >
-          <label for="cuidado"
-            ><input
-              type="radio"
-              name="amigos"
-              id="cuidado"
-              class="ravenclaw"
-              value="1"
-            />Deve-se escolher com cuidado</label
-          >
-          <label for="estímulo"
-            ><input
-              type="radio"
-              name="amigos"
-              id="estímulo"
-              class="slytherin"
-              value="1"
-            />Te estimulam a progredir</label
-          >
-          <label for="companheiros"
-            ><input
-              type="radio"
-              name="amigos"
-              id="companheiros"
-              class="gryffindor"
-              value="1"
-            />São companheiros para toda hora</label
-          >
+            <div class="form-container">
+              <label for="necessidade"><input type="radio" name="amigos" id="necessidade" class="hufflepuff" value="1"/>São necessidade humana</label>
+              <label for="cuidado"><input type="radio" name="amigos" id="cuidado" class="ravenclaw" value="1"/>Deve-se escolher com cuidado</label>
+              <label for="estímulo"><input type="radio" name="amigos" id="estímulo" class="slytherin" value="1"/>Te estimulam a progredir</label>
+              <label for="companheiros"><input type="radio" name="amigos" id="companheiros" class="gryffindor" value="1"/>São companheiros para toda hora</label>
+            </div>
         </fieldset>
         <div class="btn2">
-          <input
-            id="btn2"
-            type="button"
-            value="Deixe o chapéu decidir..."
-            onclick="finalizar()"
-          />
+          <input id="btn2" type="button" value="Deixe o chapéu decidir..." onclick="finalizar()"/>
         </div>
 
         <fieldset id="sly-or-gryff">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="slytherin"
-            ><input
-              type="radio"
-              name="par1"
-              id="slytherin"
-              class="slytherin"
-              value="1"
-            />Sonserina</label
-          >
-          <label for="gryffindor"
-            ><input
-              type="radio"
-              name="par1"
-              id="gryffindor"
-              class="gryffindor"
-              value="1"
-            />Grifinória</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="slytherin"><input type="radio" name="par1" id="slytherin" class="slytherin" value="1"/>Sonserina</label>
+              <label for="gryffindor"><input type="radio" name="par1" id="gryffindor" class="gryffindor" value="1"/>Grifinória</label>
+            </div>
         </fieldset>
         <input id="next9" type="button" value=">" onclick="finalizar()" />
 
         <fieldset id="sly-or-huff">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="slytherin"
-            ><input
-              type="radio"
-              name="par2"
-              id="slytherin"
-              class="slytherin"
-              value="1"
-            />Sonserina</label
-          >
-          <label for="hufflepuff"
-            ><input
-              type="radio"
-              name="par2"
-              id="hufflepuff"
-              class="hufflepuff"
-              value="1"
-            />Lufa-Lufa</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="slytherin"><input type="radio" name="par2" id="slytherin" class="slytherin" value="1"/>Sonserina</label>
+              <label for="hufflepuff"><input type="radio" name="par2" id="hufflepuff" class="hufflepuff" value="1"/>Lufa-Lufa</label>
+          </div>
         </fieldset>
         <input id="next10" type="button" value=">" onclick="finalizar()" />
 
         <fieldset id="sly-or-raven">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="slytherin"
-            ><input
-              type="radio"
-              name="par3"
-              id="slytherin"
-              class="slytherin"
-              value="1"
-            />Sonserina</label
-          >
-          <label for="ravenclaw"
-            ><input
-              type="radio"
-              name="par3"
-              id="ravenclaw"
-              class="ravenclaw"
-              value="1"
-            />Corvinal</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="slytherin"><input type="radio" name="par3" id="slytherin" class="slytherin" value="1"/>Sonserina</label>
+              <label for="ravenclaw"><input type="radio" name="par3" id="ravenclaw" class="ravenclaw" value="1"/>Corvinal</label>
+          </div>
         </fieldset>
         <input id="next11" type="button" value=">" onclick="finalizar()" />
 
         <fieldset id="gryff-or-huff">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="gryffindor"
-            ><input
-              type="radio"
-              name="par4"
-              id="gryffindor"
-              class="gryffindor"
-              value="1"
-            />Grifinória</label
-          >
-          <label for="hufflepuff"
-            ><input
-              type="radio"
-              name="par4"
-              id="hufflepuff"
-              class="hufflepuff"
-              value="1"
-            />Lufa-Lufa</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="gryffindor"><input type="radio" name="par4" id="gryffindor" class="gryffindor" value="1"/>Grifinória</label>
+              <label for="hufflepuff"><input type="radio" name="par4" id="hufflepuff" class="hufflepuff" value="1"/>Lufa-Lufa</label>
+            </div>
         </fieldset>
         <input id="next12" type="button" value=">" onclick="finalizar()" />
 
         <fieldset id="gryff-or-raven">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="gryffindor"
-            ><input
-              type="radio"
-              name="par5"
-              id="gryffindor"
-              class="gryffindor"
-              value="1"
-            />Grifinória</label
-          >
-          <label for="ravenclaw"
-            ><input
-              type="radio"
-              name="par5"
-              id="ravenclaw"
-              class="ravenclaw"
-              value="1"
-            />Corvinal</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="gryffindor"><input type="radio" name="par5" id="gryffindor" class="gryffindor" value="1"/>Grifinória</label>
+              <label for="ravenclaw"><input type="radio" name="par5" id="ravenclaw" class="ravenclaw" value="1"/>Corvinal</label>
+            </div>
         </fieldset>
         <input id="next13" type="button" value=">" onclick="finalizar()" />
 
         <fieldset id="huff-or-raven">
-          <legend>
-            O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual
-            dessas casas você chamará de lar?
-          </legend>
-          <label for="hufflepuff"
-            ><input
-              type="radio"
-              name="par6"
-              id="hufflepuff"
-              class="hufflepuff"
-              value="1"
-            />Lufa-Lufa</label
-          >
-          <label for="ravenclaw"
-            ><input
-              type="radio"
-              name="par6"
-              id="ravenclaw"
-              class="ravenclaw"
-              value="1"
-            />Corvinal</label
-          >
+          <legend>O Chapéu Seletor vê um futuro para você em mais de uma casa. Qual dessas casas você chamará de lar?</legend>
+            <div class="form-container">
+              <label for="hufflepuff"><input type="radio" name="par6" id="hufflepuff" class="hufflepuff" value="1"/>Lufa-Lufa</label>
+              <label for="ravenclaw"><input type="radio" name="par6" id="ravenclaw" class="ravenclaw" value="1"/>Corvinal</label>
+            </div>
         </fieldset>
         <input id="next14" type="button" value=">" onclick="finalizar()" />
       </div>
@@ -616,6 +237,7 @@
     </div>
     <div id="gryff">
       <h1>Grifinória</h1>
+      
       <p>
         Alegre-se, pois suas cores são vermelho e dourado! Sua entrada nessa
         casa é o início de uma nova aventura: é na Grifinória que você
@@ -631,6 +253,7 @@
         defendê-los da injustiça. A chama que arde em seu coração jamais deve
         ser apagada.
       </p>
+    
     </div>
     <div id="huff">
       <h1>Lufa-Lufa</h1>
