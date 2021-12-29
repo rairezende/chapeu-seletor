@@ -369,7 +369,7 @@ legend {
   background-color: rgba(122, 73, 8, 0.87);
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 720px) {
 
 body {
   font-size: 14px;
@@ -381,9 +381,11 @@ body {
   background-position: auto;
   background-size: cover;
 }
+
+
 .container img {
-  max-width:250px;
-  max-height:200px;
+  max-width: 200px;
+  max-height: 150px;
   margin-top: 13%;
   width: auto;
   height: auto;
@@ -399,6 +401,8 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+
 
 legend {
   border-radius: 40%;
