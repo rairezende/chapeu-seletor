@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   background: rgb(3, 3, 41);
   color: white;
@@ -17,12 +17,11 @@ header h1 {
 section {
   text-align: center;
   align-items: center;
-  
 }
 
 #hall {
   background-image: url("hall.webp");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -40,7 +39,7 @@ section {
   background-color: rgba(8, 4, 0, 0.925);
   color: white;
   font-size: 19px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -115,7 +114,6 @@ fieldset {
   border-radius: 30px;
   margin-left: 23%;
   border: 0px;
-
 }
 
 legend {
@@ -370,108 +368,103 @@ legend {
 }
 
 @media only screen and (max-width: 720px) {
+  body {
+    font-size: 14px;
+    font-weight: 300;
+  }
 
-body {
-  font-size: 14px;
-  font-weight:300;
-}
+  #hall {
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+  }
 
-#hall {
-  background-repeat: no-repeat;
-  background-position: auto;
-  background-size: cover;
-}
+  .container img {
+    max-width: 200px;
+    max-height: 150px;
+    margin-top: 13%;
+    width: auto;
+    height: auto;
+  }
 
+  fieldset {
+    width: 270px;
+    padding-bottom: 0px;
+    border: 0px;
+  }
 
-.container img {
-  max-width: 200px;
-  max-height: 150px;
-  margin-top: 13%;
-  width: auto;
-  height: auto;
-}
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-fieldset {
-  width: 270px;
-  padding-bottom: 0px;
-  border: 0px;
-}
+  legend {
+    border-radius: 40%;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgba(241, 238, 238, 0.911);
+    color: black;
+  }
 
-.form-container{ 
-  display: flex;
-  flex-direction: column;
-}
+  label {
+    margin-bottom: 25px;
+  }
 
+  #sly {
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 
+  #sly h1 {
+    width: 83%;
+  }
 
-legend {
-  border-radius: 40%;
-  padding-right: 19px;
-  padding-left: 19px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  background-color: rgba(241, 238, 238, 0.911);
-  color: black;
-}
+  #sly p {
+    width: auto;
+  }
 
-label {
-  margin-bottom: 25px;
-}
+  #gryff {
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 
-#sly {
-  max-width: 100%;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
+  #gryff h1 {
+    width: 83%;
+  }
 
-#sly h1 {
-  width: 83%
-}
+  #gryff p {
+    width: auto;
+  }
 
-#sly p {
-  width: auto;
-}
+  #huff {
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 
-#gryff {
-  max-width: 100%;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
+  #huff h1 {
+    width: 83%;
+  }
 
-#gryff h1 {
-  width: 83%;
-}
+  #huff p {
+    width: auto;
+  }
 
-#gryff p {
-  width: auto;
-}
+  #raven {
+    max-width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 
-#huff {
-  max-width: 100%;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
+  #raven h1 {
+    width: 83%;
+  }
 
-#huff h1 {
-  width: 83%;
-}
-
-#huff p {
-  width: auto;
-}
-
-#raven {
-  max-width: 100%;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-#raven h1 {
-  width: 83%;
-}
-
-#raven p {
-  width: auto;
-}
-
+  #raven p {
+    width: auto;
+  }
 }
