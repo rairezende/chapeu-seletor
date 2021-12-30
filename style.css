@@ -367,7 +367,7 @@ legend {
   background-color: rgba(122, 73, 8, 0.87);
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 920px) {
   body {
     font-size: 14px;
     font-weight: 300;
@@ -423,7 +423,7 @@ legend {
   }
 
   #sly p {
-    width: auto;
+    width: 83%;
   }
 
   #gryff {
@@ -437,7 +437,7 @@ legend {
   }
 
   #gryff p {
-    width: auto;
+    width: 83%;
   }
 
   #huff {
@@ -451,7 +451,7 @@ legend {
   }
 
   #huff p {
-    width: auto;
+    width: 83%;
   }
 
   #raven {
@@ -465,6 +465,6 @@ legend {
   }
 
   #raven p {
-    width: auto;
+    width: 83%;
   }
 }
